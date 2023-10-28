@@ -17,7 +17,7 @@ class GameController < ApplicationController
     elsif @cpu_move == "scissors"
       @outcome = "won"
     else
-      @outcome = "lose"
+      @outcome = "lost"
     end
 
     render({ :template => "/gametemplates/play_rock"})
@@ -34,7 +34,7 @@ class GameController < ApplicationController
     elsif @cpu_move == "rock"
       @outcome = "won"
     else
-      @outcome = "lose"
+      @outcome = "lost"
     end
 
     render({ :template => "/gametemplates/play_paper"})
@@ -50,7 +50,7 @@ class GameController < ApplicationController
     elsif @cpu_move == "paper"
       @outcome = "won"
     else
-      @outcome = "lose"
+      @outcome = "lost"
     end
 
     render({ :template => "/gametemplates/play_scissors"})
